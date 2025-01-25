@@ -7,8 +7,5 @@ def roman_to_int(roman_string):
     digits = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
     for i in reversed(roman_string):
         num = digits[i]
-        if num < total:
-            total -= num
-        else:
-            total += num
+        total += num if total < num * 5 else -num
     return total
