@@ -1,5 +1,5 @@
-#!/usr/bin/puthon3
-""" defining to_json_string function """
+#!/usr/bin/python3
+"""defining to_json_string function"""
 
 import json
 
