@@ -1,4 +1,4 @@
-#!/usr/bin/
+#!/usr/bin/python3
 '''task 10 module'''
 
 
