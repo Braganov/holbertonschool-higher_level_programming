@@ -1,0 +1,15 @@
+# Ignore the virtual environment folder
+venv/
+.env/
+# Windows-specific
+*.bat
+# macOS-specific
+.DS_Store
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+# pipenv
+Pipfile.lock
