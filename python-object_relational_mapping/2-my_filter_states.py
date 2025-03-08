@@ -12,7 +12,6 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -27,11 +26,15 @@ if __name__ == "__main__":
 
     cursor = mydb.cursor()
 
-    cursor.execute("SELECT * FROM states WHERE name = %s ORDER BY id ASC",
-                   (state_name,))
+    query = ("SELECT * FROM states "
+             "WHERE BINARY name = '{}'"
+             "ORDER BY id ASC".format(state_name))
 
-    for state in cursor.fetchall():
-        print(state)
+    cursor.execute(query)
+
+    results = cursor.fetchall()
+    for row in results:
+        print(row)
 
     cursor.close()
     mydb.close()
