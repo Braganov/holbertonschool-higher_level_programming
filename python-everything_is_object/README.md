@@ -17,6 +17,3 @@ Ce projet explore les concepts d'objets en Python, notamment:
 * Python 3.8.5
 * Ubuntu 20.04 LTS
 * pycodestyle 2.7.*
-
-## Auteur
-[Votre nom]
